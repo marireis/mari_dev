@@ -2,128 +2,232 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Nome - Portfólio</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .project-card {
-            flex: 1 1 300px;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-
-        .project-card h3 {
-            color: #333;
-        }
-
-        .project-card p {
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Potifólio</title>
 </head>
+
 <body>
-
-    <header>
-        <h1>Seu Nome</h1>
-        <p>Desenvolvedor Web</p>
-    </header>
-
-    <section>
-        <h2>Sobre Mim</h2>
-        <p>Eu sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Minha paixão é transformar ideias em código e construir soluções inovadoras.</p>
-    </section>
-
-    <section>
-        <h2>Projetos</h2>
-        <div class="projects">
-            <div class="project-card">
-                <h3>Projeto 1</h3>
-                <p>Descrição do projeto 1.</p>
-            </div>
-            <div class="project-card">
-                <h3>Projeto 2</h3>
-                <p>Descrição do projeto 2.</p>
-            </div>
+    <div class="container">
+        <div class="hamburguer" id="Close-menu">
+            <div class="line" id="line-1"></div>
+            <div class="line" id="line-2"></div>
+            <div class="line" id="line-3"></div>
+            <span>Fechar</span>
         </div>
-    </section>
 
-    <section>
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
-    </section>
+        <header>
+            <div class="img-wrapper">
+                <img src="./images/background-img.jpg">
+            </div>
+            <div class="banner">
+                <h1 class="title-style">Marina Reis</h1>
+                <p>Desenvolvedora</p>
+                <button class="btnCustom" id="button-banner">Saiba mais</button>
+            </div>
+        </header>
 
-    <footer>
-        <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
-    </footer>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li id="menu-1" class="menu-item"><a id="close-menu" href="#" class="menu-link">home</a></li>
+                    <li id="menu-2" class="menu-item"><a id="close-menu" href="#" class="menu-link">conhecimentos</a></li>
+                    <li id="menu-3" class="menu-item"><a id="close-menu" href="#" class="menu-link">projetos</a></li>
+                    <li id="menu-4" class="menu-item"><a id="close-menu" href="#" class="menu-link">contato</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a id="media-1" href="#"><i class="fab fa-github"></i></a>
+                <a id="media-2" href="#"><i class="fab fa-instagram"></i></a>
+                <a id="media-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </aside>
 
-    <script>
-        // Adicione aqui qualquer script JavaScript necessário para tornar seu portfólio mais interativo.
-    </script>
+        <section class="section-conhecimento">
+            <div class="section-header" id="conhecimentos">
+                <h1 class="title-style">Conhecimentos</h1>
+            </div>
+            <div class="conhecimentos">
+                <div class="conhecimento" data-anime="left">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat itaque, quibusdam, id numquam vitae ipsa ratione illo reprehenderit maiores, laudantium placeat non cumque suscipit veniam enim tempore. Nam, molestias!</p>
+                    </div>
+                </div>
+
+                <div class="conhecimento" data-anime="right">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>Css</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat itaque, quibusdam, id numquam vitae ipsa ratione illo reprehenderit maiores, laudantium placeat non cumque suscipit veniam enim tempore. Nam, molestias!</p>
+                    </div>
+                </div>
+            
+                <div class="conhecimento" data-anime="left">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat itaque, quibusdam, id numquam vitae ipsa ratione illo reprehenderit maiores, laudantium placeat non cumque suscipit veniam enim tempore. Nam, molestias!</p>
+                    </div>
+                </div>
+
+                <div class="conhecimento" data-anime="right">
+                    <div class="conhecimento-header">
+                        <i class="fa-brands fa-java"></i>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat itaque, quibusdam, id numquam vitae ipsa ratione illo reprehenderit maiores, laudantium placeat non cumque suscipit veniam enim tempore. Nam, molestias!</p>
+                    </div>
+                </div>
+            
+                <div class="conhecimento" data-anime="left">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Git e Github</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat itaque, quibusdam, id numquam vitae ipsa ratione illo reprehenderit maiores, laudantium placeat non cumque suscipit veniam enim tempore. Nam, molestias!</p>
+                    </div>
+                </div>
+
+                <div class="conhecimento" data-anime="right">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat itaque, quibusdam, id numquam vitae ipsa ratione illo reprehenderit maiores, laudantium placeat non cumque suscipit veniam enim tempore. Nam, molestias!</p>
+                    </div>
+                </div>
+
+                <div class="imagem-fundo">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div> 
+        </section>
+
+        <section class="section-projetos" id="projetos">
+            <div class="projetos-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="cards">
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="images/proj-1.jpg">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>projeto 1</h2>
+                            <h3>Java com spring boot</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis quia asperiores minima voluptatum delectus quisquam nobis totam. Dolorum quis sapiente autem illum deleniti, rerum animi corporis suscipit a recusandae sit.</p>
+                            <button class="btnSend">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="images/proj-2.jpg">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>projeto 2</h2>
+                            <h3>HTML, Css, JavaScript</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus voluptates laudantium rerum eligendi labore maiores facilis eos ullam temporibus, facere libero culpa! Eaque praesentium ipsa eos aperiam fuga labore?</p>
+                            <button class="btnSend">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="images/proj-3.jpg">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>projeto 3</h2>
+                            <h3>HTML, Css, JavaScript</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus voluptates laudantium rerum eligendi labore maiores facilis eos ullam temporibus, facere libero culpa! Eaque praesentium ipsa eos aperiam fuga labore?</p>
+                            <button class="btnSend">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="images/proj-4.png">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>projeto 4</h2>
+                            <h3>HTML, Css, JavaScript</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus voluptates laudantium rerum eligendi labore maiores facilis eos ullam temporibus, facere libero culpa! Eaque praesentium ipsa eos aperiam fuga labore?</p>
+                            <button class="btnSend">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-contato" id="contato">
+            <div class="contact-wrapper" data-anime="up">
+                <div class="contact-left"></div>
+                <div class="contact-right">
+                    <h1>Contato</h1>
+                    <form class="form-contact">
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="field" id="message">
+                            <label for="message" class="field-label">Mensagem</label>
+                        </div>
+                        <button class="btnCustom" type="send">Enviar</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-area">
+                <div class="footer-item area1">
+                    <div class="footer-social">
+                        <a href=""><img src="/images/linkedin.png" /></a>
+                        <a href=""><img src="/images/facebook.png" /></a>
+                    </div>
+                </div>
+
+                <div class="footer-item area2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem labore voluptatibus perspiciatis, omnis laboriosam mollitia ducimus dicta incidunt? Corrupti nulla architecto harum quam distinctio sit nobis reiciendis ducimus at adipisci?</p>
+                </div>
+
+                <div class="footer-item area3">
+                    <form method="post" id="send-email">
+                        <input type="email" name="email" id="email" placeholder="EMAIL TO SUBSCRIBE" autocomplete="email" />
+                        <button class="button" form="send-email">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
 
 </body>
 </html>
